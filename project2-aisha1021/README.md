@@ -1,7 +1,3 @@
-Certainly! Here is the revised project specification with the additional task details and requirements included:
-
----
-
 # Algorithmic Adventures II: The Exponential Creature Odyssey
 
 ## Project 2 - Creature Types: Inheritance
