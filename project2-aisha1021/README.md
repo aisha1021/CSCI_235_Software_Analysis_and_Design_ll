@@ -290,7 +290,6 @@ setAffinities
 */
 variantToString
 ```
-Certainly! Here's the README section for Task 2: Testing, formatted as requested:
 
 ---
 
