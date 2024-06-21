@@ -2,6 +2,8 @@
 
 ## Project 3 - The Cavern
 
+![Project3 Cover](project3_cover.png)
+
 ### Overview
 
 In this project, you will create a simulation setting by implementing the `Cavern` class, which will house your Creatures. You will add functionality to add and remove Creatures from the Cavern, query the Cavern for information about the Creatures it contains, and release Creatures based on their level and category.
@@ -43,6 +45,8 @@ Work through the tasks sequentially (implement and test). Only move on to a task
 
 ### Task 1: Modify the `Creature` Class
 
+![Project3 Creatures](project3_creatures.png)
+
 Define and implement the following additional public member functions:
 
 ```cpp
@@ -69,7 +73,11 @@ bool operator!=(const Creature& rhs) const;
 
 ### Task 2: Implement the `Cavern` Class as a Subclass of `ArrayBag`
 
+![Project3 Cavern](project3_cavern.png)
+
 The `Cavern` is a subclass of `ArrayBag` that stores `Creature` objects.
+
+![Project3 Cavern Details](project3_cavern_details.png)
 
 #### Data Types
 
@@ -168,6 +176,7 @@ int releaseCreaturesOfCategory(const std::string& category = "ALL");
 **/
 void cavernReport() const;
 ```
+![Project3 Cavern Report](project3_cavern_report.png)
 
 ### Testing
 
