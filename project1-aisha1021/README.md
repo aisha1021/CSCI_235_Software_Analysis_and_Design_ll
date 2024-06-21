@@ -47,9 +47,13 @@ For all projects, you will receive 15% points for documentation. These are the r
 
 ### Part 2 - The Creature Class
 
+![Creatures](project1_creatures.png)
+
 You will implement the Creature class. Always separate interface from implementation (`Creature.hpp` and `Creature.cpp`). Work through the tasks sequentially (implement and test). Only move on to a task when you are positive that the previous one has been completed correctly. Remember that the names of classes and methods must exactly match those in this specification. This class has only accessor and mutator functions for its public data members.
 
 #### Task 1: The Creature Class
+
+![Creature details](project1_creature_details.png)
 
 Every Creature has a Name, Category, Hitpoints, Level, and a boolean indicating if the creature is Tame.
 
