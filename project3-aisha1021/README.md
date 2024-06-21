@@ -1,23 +1,23 @@
-```
 # Algorithmic Adventures II: Exponential Creature Odyssey
 
 ## Project 3 - The Cavern
 
 ### Overview
 
-Welcome to the Cavern! In this project, you will implement a simulation setting by defining the `Cavern` class, where you will house your Creatures. This project involves modifying the `Creature` class and implementing the `Cavern` class as a subclass of `ArrayBag` that holds `Creature` objects. You will create functionality to add and remove Creatures from the Cavern and query the Cavern for information about the Creatures it contains. Additionally, you will be able to release Creatures from the Cavern based on their level and category.
+In this project, you will create a simulation setting by implementing the `Cavern` class, which will house your Creatures. You will add functionality to add and remove Creatures from the Cavern, query the Cavern for information about the Creatures it contains, and release Creatures based on their level and category.
 
-### Getting Started
+### Assignment
 
 To accept the GitHub Classroom assignment, please find the link on Blackboard.
 
 ### Project Structure
 
-This project consists of two main tasks:
-1. Modify the `Creature` class.
-2. Implement the `Cavern` class as a subclass of `ArrayBag`.
+This project consists of two main parts:
 
-You will **NOT** modify `ArrayBag`; this class will remain as distributed.
+1. **Modify the Creature class**
+2. **Implement the Cavern class**, as a subclass of `ArrayBag` that holds `Creature` objects
+
+**Note:** You will **NOT** modify the `ArrayBag` class. It remains as distributed.
 
 ### Additional Resources
 
@@ -51,7 +51,7 @@ Define and implement the following additional public member functions:
   @return     : Returns true if the right-hand side creature is "equal", false otherwise.
                 Two creatures are equal if they have the same name, same category, same level, and if they're either both tame or both not.
 
-  Example: In order for creature1 to be == to creature2, we only need:
+  Example: For creature1 to be == to creature2, we need:
   - The same name
   - The same category
   - The same level
@@ -211,9 +211,7 @@ You will submit the following files:
 
 ### Help
 
-Help is available via drop-in tutoring in Lab 1001
-
-B (see the website for the schedule). Start early to ensure you get the help you need.
+Help is available via drop-in tutoring in Lab 1001B (see the website for the schedule). Start early to ensure you get the help you need.
 
 ### Authors
 
