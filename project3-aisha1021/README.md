@@ -176,6 +176,7 @@ int releaseCreaturesOfCategory(const std::string& category = "ALL");
 **/
 void cavernReport() const;
 ```
+
 ![Project3 Cavern Report](project3_cavern_report.png)
 
 ### Testing
