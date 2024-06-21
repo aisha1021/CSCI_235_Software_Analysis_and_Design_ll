@@ -2,6 +2,8 @@
 
 ## Project 4 - The MycoMorsel
 
+![Project4 Cover](project4_cover.png)
+
 ### Overview
 
 Now that we have our full-fledged Creatures and a game world, let's implement some game functionality. In this project, you will modify the classes you have implemented thus far to allow Creatures to be fed – after all, a hungry Creature is an angry Creature, and one does not want to be in a Cavern with angry Creatures. Conveniently, the Cavern seems to be home to a variety of fungi, from which Selfa Ensert has managed to create MycoMorsel, a food derived from fungus. This might be a cost-effective, albeit dubious, form of sustenance for the Creatures, but eating MycoMorsels will most likely affect each Creature subclass and type differently. Have your Dragons, Ghouls, and Mindflayers feast in the Cavern by eating MycoMorsel and see what happens to them!
@@ -39,6 +41,8 @@ Work through the tasks sequentially (implement and test). Only move on to a task
 
 ### MycoMorsel Feast
 
+![Project4 Mycomorsel Feast](project4_mycomorsel_feast.png)
+
 #### Task 1: Modify the Creature Class and Its Subclasses
 
 **Modify the Creature class as follows:**
@@ -55,6 +59,8 @@ virtual bool eatMycoMorsel() = 0;
 ```
 
 **Modify the Dragon class as follows:**
+
+![Project4 Dragon Myco](project4_dragon_myco.png)
 
 - Add the following public member functions:
 
@@ -91,6 +97,8 @@ bool eatMycoMorsel() override;
 
 **Modify the Ghoul class as follows:**
 
+![Project4 Ghoul Myco](project4_ghoul_myco.png)
+
 - Add the following public member functions:
 
 ```cpp
@@ -125,6 +133,8 @@ bool eatMycoMorsel() override;
 ```
 
 **Modify the Mindflayer class as follows:**
+
+![Project4 Mindflayer Myco](project4_mindflayer_myco.png)
 
 - Add the following public member functions:
 
@@ -166,6 +176,8 @@ bool eatMycoMorsel() override;
 ```
 
 #### Task 2: Modify the Cavern Class
+
+![Project4 Dragons](project4_dragons.png) ![Project4 Ghouls](project4_ghouls.png) ![Project4 Mindflayers](project4_mindflayers.png)
 
 - Modify the Cavern to now store pointers to Creatures, rather than Creature objects.
 - Implement a parameterized constructor:
