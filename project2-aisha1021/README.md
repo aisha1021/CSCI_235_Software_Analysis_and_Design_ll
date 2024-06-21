@@ -2,6 +2,8 @@
 
 ## Project 2 - Creature Types: Inheritance
 
+![Project 2 Cover](project2_cover.png)
+
 ### Introduction
 In this project, you will define different types of Creatures through inheritance. You will implement three new classes that derive from the `Creature` class but also have additional attributes and methods specific to their type.
 
@@ -18,6 +20,9 @@ Remember, you must thoroughly document your code!!!
 ### Task 1: Subclasses
 
 #### The Dragon Class
+
+![Project2 Dragon](project2_dragon.png)
+![Project2 Dragon Description](project2_dragon_details.png)
 
 ##### Data Types
 The Dragon class must define the following type defined publicly inside the class:
@@ -105,6 +110,9 @@ void setFlight(bool flight);
 
 #### The Ghoul Class
 
+![Project2 Ghoul](project2_ghoul.png)
+![Project2 Ghoul Details](project2_ghoul_details.png)
+
 ##### Data Types
 The Ghoul class must define the following type defined publicly inside the class:
 ```cpp
@@ -191,6 +199,9 @@ void setTransformation(bool transformation);
 ```
 
 #### The Mindflayer Class
+
+![Project2 Mindflayer](project2_mindflayer.png)
+![Project2 Mindflayer Detauls](project2_mindflayer_details.png)
 
 ##### Data Types
 The Mindflayer class must define the following types defined publicly inside the class:
