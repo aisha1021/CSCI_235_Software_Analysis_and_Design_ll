@@ -6,9 +6,9 @@ The primary focus of this course is the design and analysis of algorithms and ab
 
 ## Course Resources
 
-- **Course Schedule**
-- **Syllabus**
-- **Programming Guidelines**
+- **[Course Schedule](https://tligorio.github.io/spring_2024_schedule/)**
+- **[Syllabus](https://tligorio.github.io/documents/CSCI235_Spring2024_Syllabus.pdf)**
+- **[Programming Guidelines](https://tligorio.github.io/documents/CSCI235_Spring2024_ProgrammingGuidelines.pdf)**
 
 ## TUTORING
 
