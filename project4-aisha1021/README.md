@@ -177,7 +177,9 @@ bool eatMycoMorsel() override;
 
 #### Task 2: Modify the Cavern Class
 
-![Project4 Dragons](project4_dragons.png) ![Project4 Ghouls](project4_ghouls.png) ![Project4 Mindflayers](project4_mindflayers.png)
+![Project4 Dragons](project4_dragons.png) 
+![Project4 Ghouls](project4_ghouls.png) 
+![Project4 Mindflayers](project4_mindflayers.png)
 
 - Modify the Cavern to now store pointers to Creatures, rather than Creature objects.
 - Implement a parameterized constructor:
