@@ -1,4 +1,4 @@
-```markdown
+```
 # Algorithmic Adventures II: Exponential Creature Odyssey
 
 ## Project 3 - The Cavern
