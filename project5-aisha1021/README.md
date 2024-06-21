@@ -2,6 +2,10 @@
 
 ## Project 5 - Ingredient Management with Linked Lists
 
+
+![Project5 Cover1](project5_cover1.png)
+![Project5 Cover2](project5_cover2.png)
+
 ### Overview
 
 Most of our Creatures weren't too happy with the MycoMorsels. It may be time to start making something more edible to feed the Creatures of the Cavern. In this project, you will build the `Ingredient` struct and the `Pantry` class to manage recipes and craft new Ingredients. This will allow even our Creatures to whip up the most delicious recipes!
@@ -41,6 +45,8 @@ Implement the `Ingredient` struct in `Pantry.hpp` but outside of the `Pantry` cl
 - An integer representing the ingredient price
 - A vector of `Ingredient` pointers representing the ingredient's recipe
 
+![Project5 Ingredients](project5_ingredients.png)
+
 #### Constructors
 
 ```cpp
@@ -68,6 +74,8 @@ Note: An ingredient's recipe can be thought of as a list of prerequisite ingredi
 ### Task 2: Implement the Pantry Class as a Subclass of LinkedList
 
 We will now organize all the ingredients in a Pantry so that even our Creatures will be able to easily find the ingredients to execute any recipe.
+
+![Project5 Linked Pantry](project5_linked_pantry.png)
 
 #### Public Member Functions
 
@@ -119,6 +127,9 @@ Pantry(const std::string &inputFile);
 */
 ~Pantry();
 ```
+![Project5 Dragon](project5_dragon_ingredient.png)
+![Project5 Ghoul](project5_ghoul_ingredient.png)
+![Project5 Mindflayer](project5_mindflayer_ingredient.png)
 
 **Unique Methods**
 
