@@ -4,6 +4,8 @@
 
 ### Intro
 
+![Project 1](project1_cover.png)
+
 This semester, you will embark on an extraordinary journey developing the infrastructure for a captivating Creature-world simulation. Set within the enchanting depths of a mythical world, your simulation will offer participants a unique open-world experience where they get to capture and tame fantastic Creatures.
 
 The main character, Selfa Ensert, is tasked with collecting multiple Creatures for a mysterious and powerful wizard, allegedly for a Creature zoo, and definitely not for a world-dominating army. Participants of your simulation will interact with various Creatures, including three distinct categories: the Undead, the Mystical, and the Alien.
