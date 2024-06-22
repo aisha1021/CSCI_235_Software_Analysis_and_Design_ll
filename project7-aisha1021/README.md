@@ -2,7 +2,9 @@
 
 ## Project 7 - Binary Skill Tree
 
-In this project, we will implement a Binary Skill Tree that allows us to track the skills of our Creatures. This will help our wizard boss understand how the skills of our Creatures may progress over time.
+While our Creatures know how to fight, our wizard boss wants to know how their skills may progress over time. To do this, we will implement a Binary Skill Tree that will allow us to track the skills of our Creatures!
+
+![Project7 Cover](project7_cover.png)
 
 ## Getting Started
 
@@ -15,6 +17,8 @@ Work through the tasks sequentially (implement and test). Only move on to a task
 Remember to thoroughly document your code!
 
 ## Task 1: Implement the Skill Struct
+
+![Project7 Skill](project7_skill.png)
 
 ### Data Members
 
@@ -65,6 +69,8 @@ bool operator>(const Skill &other) const;
 
 The `SkillTree` class must be a subclass of `BinarySearchTree` that stores `Skill` objects.
 
+![Project7 Binary Tree](project7_binary_tree.png)
+
 ### Constructors
 
 ```cpp
@@ -80,6 +86,8 @@ SkillTree();
  */
 SkillTree(const std::string &filename);
 ```
+![Project7 Ghoul Tree](project7_ghoul_tree.png)
+![Project7 SkillTree](project7_skillTree.png)
 
 ### Methods
 
@@ -138,6 +146,8 @@ void balance();
   */
 void preorderDisplay() const;
 ```
+
+![Project7 Dragon Tree](project7_dragon_tree.png)
 
 ## Testing
 
