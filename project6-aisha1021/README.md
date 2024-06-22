@@ -4,6 +4,8 @@
 
 The mysterious wizard has updated the terms for the job – they would like you to sort out the creatures of the highest level and equip them with a queue of attacks. How this is necessary for a Creature zoo, we're not sure... but it won't be a good adventure without some action! In this project, you will implement the necessary functionality to identify our highest-ranking Creatures in the Cavern and prepare them for battle!
 
+![Project6 Cover1](project6_cover.png)
+
 ### Getting Started
 
 To accept the GitHub Classroom assignment, please find the link on Blackboard.
@@ -28,6 +30,8 @@ This project consists of three tasks:
 This project may take a while to implement, so start right away! Get Task 1 and 2 out of the way quickly as you may need more testing and debugging time for Task 3. Work through the tasks sequentially (implement and test). Only move on to a task when you are positive that the previous one has been completed correctly. Ensure that the names of classes and methods exactly match those in this specification.
 
 **Important:** You must thoroughly document your code!
+
+![Project6 Cover2](project6_cover2.png)
 
 ### Task 1: Modify the Creature Class
 
@@ -54,6 +58,8 @@ damage_ = [4, 1]
 #### Additional Data Members
 
 - An attack queue to store the creature's attacks
+
+![Project6 Creature](project6_creature.png)
 
 #### Additional Methods
 
@@ -91,6 +97,8 @@ virtual void displayAttacks() const = 0;
 
 #### Dragon Class
 
+![Project6 Dragon vs Ghoul](project6_dragon_vs_ghoul.png)
+
 ```cpp
 /**
   * @param: A const reference to int corresponding to the attack to be added to the attack queue.
@@ -122,6 +130,8 @@ void displayAttacks() const override;
 ```
 
 #### Ghoul Class
+
+![Project6 Ghouls](project6_ghouls.png)
 
 ```cpp
 /**
@@ -168,6 +178,8 @@ void displayAttacks() const override;
 ```
 
 #### Mindflayer Class
+
+![Project6 Mindflayers](project6_mindflayers.png)
 
 ```cpp
 /**
@@ -218,6 +230,9 @@ void displayAttacks() const override;
 
 ### Task 3: Modify the Cavern Class
 
+![Project6 Dragon vs Ghoul2](project6_dragon_vs_ghoul2.png)
+![Project6 Mindflayer vs Ghoul](project6_mindflayers_vs_ghouls.png)
+
 #### Data Types
 
 The `Cavern` class must additionally define the following data members:
@@ -226,6 +241,8 @@ The `Cavern` class must additionally define the following data members:
 - A stack of pointers to the highest level UNDEAD Creatures in the Cavern
 - A stack of pointers to the highest level MYSTICAL Creatures in the Cavern
 - A stack of pointers to the highest level UNKNOWN Creatures in the Cavern
+
+![Project6 Cavern](project6_cavern.png)
 
 #### Additional Methods
 
