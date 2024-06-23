@@ -45,7 +45,6 @@ enum Element {NONE, FIRE, WATER, EARTH, AIR};
   Default number of head(s): 1
   Booleans are default-initialized to False. 
 */
-Dragon();
 
 /**
   Parameterized constructor.
@@ -60,7 +59,6 @@ Dragon();
   @post       : The private members are set to the values of the corresponding parameters.
   Hint: Notice the default arguments in the parameterized constructor.
 */
-Dragon(const std::string &name, Category category = MYSTICAL, int hitpoints = 1, int level = 1, bool tame = false, Element element = NONE, int numberOfHeads = 1, bool flight = false);
 ```
 
 ##### Unique Methods
@@ -70,20 +68,20 @@ Dragon(const std::string &name, Category category = MYSTICAL, int hitpoints = 1,
   Getter for the element.
   @return     : The element (a string representation of the Element enum)
 */
-std::string getElement() const;
+getElement
 
 /**
   Setter for the element.
   @param      : A reference to the element (an Element enum)
   @post       : The element is set to the value of the parameter.
 */
-void setElement(Element element);
+setElement
 
 /**
   Getter for the number of heads.
   @return     : The number of heads (an integer)
 */
-int getNumberOfHeads() const;
+getNumberOfHeads
 
 /**
   Setter for the number of heads.
@@ -92,20 +90,20 @@ int getNumberOfHeads() const;
   @post       : The number of heads is set to the value of the parameter.
   @return     : True if the number of heads is set, false otherwise.
 */
-bool setNumberOfHeads(int numberOfHeads);
+setNumberOfHeads
 
 /**
   Getter for the flight flag.
   @return     : The flight flag (a boolean)
 */
-bool getFlight() const;
+getFlight
 
 /**
   Setter for the flight flag.
   @param      : A reference to the flight flag (a boolean)
   @post       : The flight flag is set to the value of the parameter.
 */
-void setFlight(bool flight);
+setFlight
 ```
 
 #### The Ghoul Class
@@ -135,7 +133,6 @@ enum Faction {NONE, FLESHGORGER, SHADOWSTALKER, PLAGUEWEAVER};
   Default faction: NONE
   Booleans are default-initialized to False. 
 */
-Ghoul();
 
 /**
   Parameterized constructor.
@@ -150,7 +147,6 @@ Ghoul();
   @post       : The private members are set to the values of the corresponding parameters.
   Hint: Notice the default arguments in the parameterized constructor.
 */
-Ghoul(const std::string &name, Category category = UNDEAD, int hitpoints = 1, int level = 1, bool tame = false, int decay = 0, Faction faction = NONE, bool transformation = false);
 ```
 
 ##### Unique Methods
@@ -160,7 +156,7 @@ Ghoul(const std::string &name, Category category = UNDEAD, int hitpoints = 1, in
   Getter for the level of decay.
   @return     : The level of decay (an integer)
 */
-int getDecay() const;
+getDecay
 
 /**
   Setter for the level of decay.
@@ -169,33 +165,33 @@ int getDecay() const;
   @post       : The level of decay is set to the value of the parameter.
   @return     : true if the level of decay was set, false otherwise
 */
-bool setDecay(int decay);
+setDecay
 
 /**
   Getter for the faction.
   @return     : The faction (a string representation of the Faction enum)
 */
-std::string getFaction() const;
+getFaction
 
 /**
   Setter for the faction.
   @param      : A reference to the faction (a Faction enum)
   @post       : The faction is set to the value of the parameter.
 */
-void setFaction(Faction faction);
+setFaction
 
 /**
   Getter for the transformation.
   @return     : The transformation (a boolean)
 */
-bool getTransformation() const;
+getTransformation
 
 /**
   Setter for the transformation.
   @param      : A reference to the transformation (a boolean)
   @post       : The transformation is set to the value of the parameter.
 */
-void setTransformation(bool transformation);
+setTransformation
 ```
 
 #### The Mindflayer Class
@@ -228,7 +224,6 @@ struct Projectile {
   Default Category: ALIEN
   Default summoning: False
 */
-Mindflayer();
 
 /**
   Parameterized constructor.
@@ -243,7 +238,6 @@ Mindflayer();
   @post       : The private members are set to the values of the corresponding parameters.
   Hint: Notice the default arguments in the parameterized constructor.
 */
-Mindflayer(const std::string &name, Category category = ALIEN, int hitpoints = 1, int level = 1, bool tame = false, std::vector<Projectile> projectiles = {}, bool summoning = false, std::vector<Variant> affinities = {});
 ```
 ##### Unique Methods
 
