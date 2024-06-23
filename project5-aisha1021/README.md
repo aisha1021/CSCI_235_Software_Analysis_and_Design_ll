@@ -55,7 +55,6 @@ Implement the `Ingredient` struct in `Pantry.hpp` but outside of the `Pantry` cl
   @post: Creates a new Ingredient object with default values. String defaults to empty string. 
          Default quantity is 0, default price is 1.
 */
-Ingredient();
 
 /**
   Parameterized Constructor
@@ -66,7 +65,6 @@ Ingredient();
   @param: A vector holding Ingredient pointers representing the ingredient's recipe
   @post: Creates a new Ingredient object with the given parameters
 */
-Ingredient(const std::string &name, const std::string &description, int quantity, int price, const std::vector<Ingredient*> &recipe);
 ```
 
 Note: An ingredient's recipe can be thought of as a list of prerequisite ingredients that must be crafted before this ingredient can be crafted.
@@ -85,7 +83,6 @@ We will now organize all the ingredients in a Pantry so that even our Creatures 
 /**
   Default Constructor
 */
-Pantry();
 
 /**
   Parameterized Constructor
@@ -119,13 +116,11 @@ Pantry();
   @post: Each line of the input file corresponds to an ingredient to be added to the list. No duplicates are allowed.
   Hint: use std::ifstream and getline()
 */
-Pantry(const std::string &inputFile);
 
 /**
   Destructor
   @post: Explicitly deletes every dynamically allocated Ingredient object
 */
-~Pantry();
 ```
 ![Project5 Dragon](project5_dragon_ingredient.png)
 ![Project5 Ghoul](project5_ghoul_ingredient.png)
@@ -138,13 +133,13 @@ Pantry(const std::string &inputFile);
   @param: A const string reference to an ingredient name
   @return: The integer position of the given ingredient if it is in the Pantry, -1 if not found. REMEMBER, indexing starts at 0.
 */
-int getPosOf(const std::string &name) const;
+getPosOf
 
 /**
   @param: A const string reference to an ingredient name
   @return: True if the ingredient information is already in the Pantry
 */
-bool contains(const std::string &name) const;
+contains
 
 /**
   @param: A pointer to an Ingredient object
@@ -152,7 +147,7 @@ bool contains(const std::string &name) const;
          Each of its Ingredients in its recipe are also added to the Pantry IF not already in the list.
   @return: True if the ingredient was added successfully, false otherwise.
 */
-bool addIngredient(Ingredient *ingredient);
+addIngredient
 
 /**
   @param: A const string reference representing an ingredient name
@@ -164,13 +159,13 @@ bool addIngredient(Ingredient *ingredient);
          Each of its Ingredients in its recipe are also added to the Pantry IF not already in the list.
   @return: True if the ingredient was added successfully
 */
-bool addIngredient(const std::string &name, const std::string &description, int quantity, int price, const std::vector<Ingredient*> &recipe);
+addIngredient
 
 /**
   @param: An Ingredient pointer
   @return: A boolean indicating if all the given ingredient can be created (all of the ingredients in its recipe can be created, or if you have enough of each ingredient in its recipe to create it)
 */
-bool canCreate(const Ingredient *ingredient) const;
+canCreate
 
 /**
   @param: An Ingredient pointer
@@ -184,7 +179,7 @@ bool canCreate(const Ingredient *ingredient) const;
 
   If the ingredient has no recipe, print "Recipe:\nNONE\n\n" after the price.
 */
-void printIngredient(const Ingredient *ingredient) const;
+printIngredient
 
 /**
   @param: A const string reference to an ingredient name
@@ -195,13 +190,13 @@ void printIngredient(const Ingredient *ingredient) const;
          If the ingredient has no recipe, print "UNCRAFTABLE\n" at the end of the function.
   HINT: Use canCreate() to determine if the ingredient can be created.
 */
-void ingredientQuery(const std::string &name) const;
+ingredientQuery
 
 /**
   @return: An integer sum of the price of all the ingredients currently in the list.
   Note: This should only include price values from ingredients that you have 1 or more of. Do not consider ingredients that you have 0 of, even if you have the ingredients to make them.
 */
-int calculatePantryValue() const;
+calculatePantryValue
 
 /**
   @param: A const string reference to a filter with a default value of "NONE".
@@ -222,7 +217,7 @@ int calculatePantryValue() const;
 
 :\nNONE\n\n" after the price.
 */
-void pantryList(const std::string &filter = "NONE") const;
+pantryList
 ```
 
 ### Task 3: Start Crafting Ingredients! - Debugging Help
