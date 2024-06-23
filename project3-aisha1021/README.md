@@ -61,14 +61,14 @@ Define and implement the following additional public member functions:
   - The same level
   - They must either be both tame or both not
 */
-bool operator==(const Creature& rhs) const;
+operator==
 
 /**
   @param      : a const reference to the right-hand side of the != operator.
   @return     : Returns true if the right-hand side creature is NOT "equal" (!=), false otherwise.
                 Two creatures are NOT equal if any of their name, category, or level are not equal, or if one is tame and the other is not.
 */
-bool operator!=(const Creature& rhs) const;
+operator!=
 ```
 
 ### Task 2: Implement the `Cavern` Class as a Subclass of `ArrayBag`
@@ -94,7 +94,6 @@ Constructor:
   Default constructor.
   Default-initializes all private members. 
 */
-Cavern();
 ```
 
 Unique Methods:
@@ -105,7 +104,7 @@ Unique Methods:
   * @post    :   If the given Creature is not already in the Cavern, add Creature to the Cavern and updates the level sum and the tame Creature count if the creature is tame.
   * @return  :   returns true if a Creature was successfully added to the Cavern, false otherwise
 **/
-bool enterCavern(const Creature& creature);
+enterCavern
 
 /**
   * @param   :   A reference to a Creature leaving the Cavern
@@ -113,29 +112,29 @@ bool enterCavern(const Creature& creature);
   * @post    :   removes the creature from the Cavern and updates the level sum. 
                   If the Creature is tame, it also updates the tame count.
 **/
-bool exitCavern(const Creature& creature);
+exitCavern
 
 /**
   * @return   :  The integer level count of all the creatures currently in the Cavern
 **/
-int getLevelSum() const;
+getLevelSum
 
 /**
   * @return   :  The average level (int) of all the creatures in the Cavern
   * @post     :  Computes the average level (double) of the Cavern rounded to the NEAREST integer.
 **/
-int calculateAvgLevel() const;
+calculateAvgLevel
 
 /**
   * @return   :  The integer count of tame Creatures in the Cavern
 **/
-int getTameCount() const;
+getTameCount
 
 /**
   * @return   :  The percentage (double) of all the tame creatures in the Cavern
   * @post     :   Computes the percentage of tame creatures in the Cavern rounded up to 2 decimal places.
 **/
-double calculateTamePercentage() const;
+calculateTamePercentage
 
 /**
   * @param  :   A reference to a string representing a creature Category with value in ["UNKNOWN", "UNDEAD", "MYSTICAL", "ALIEN"]
@@ -143,14 +142,14 @@ double calculateTamePercentage() const;
               If the argument string does not match one of the expected category values, the tally is zero. 
               NOTE: no pre-processing of the input string necessary, only uppercase input will match.
 **/
-int tallyCategory(const std::string& category) const;
+tallyCategory
 
 /**
   * @param  :   An integer representing the level threshold of the creatures to be removed from the Cavern, with default value 0
   * @post   :   Removes all creatures from the Cavern whose level is less than the given level. If no level is given, removes all creatures from the Cavern. Ignore negative input.
   * @return :   The number of creatures removed from the Cavern
 **/
-int releaseCreaturesBelowLevel(int level = 0);
+releaseCreaturesBelowLevel
 
 /**
   * @param  : A reference to a string representing a creature Category with a value in ["UNKNOWN", "UNDEAD", "MYSTICAL", "ALIEN"], or default value "ALL" if no category is given
@@ -158,7 +157,7 @@ int releaseCreaturesBelowLevel(int level = 0);
   * @return : The number of creatures removed from the Cavern
               NOTE: no pre-processing of the input string necessary, only uppercase input will match. If the input string does not match one of the expected category values, do not remove any creatures.
 **/
-int releaseCreaturesOfCategory(const std::string& category = "ALL");
+releaseCreaturesOfCategory
 
 /**
   * @post    : Outputs a report of the creatures currently in the Cavern in the form:
@@ -174,7 +173,7 @@ int releaseCreaturesOfCategory(const std::string& category = "ALL");
               AVERAGE LEVEL: 5
               TAME: 85.72%
 **/
-void cavernReport() const;
+cavernReport
 ```
 
 ![Project3 Cavern Report](project3_cavern_report.png)
