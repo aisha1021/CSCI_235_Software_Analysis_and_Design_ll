@@ -67,30 +67,30 @@ damage_ = [4, 1]
 /**
   * @return a copy of the attackQueue
 */
-std::queue<Attack> getAttackQueue() const;
+getAttackQueue
 
 /**
   * @param: A const reference to int indicating the attack to be added to the queue.
   * Pure virtual function to be implemented by the derived classes
   */
-virtual void addAttack(int attack) = 0;
+addAttack
 
 /**
   * @param: A const reference to attack to be added to the queue. 
   * @post: The attack is added to the queue
   */
-void addAttack(const Attack& attack);
+addAttack
 
 /**
   * @post: the attackQueue is emptied
 */
-void clearAttackQueue();
+clearAttackQueue
 
 /**
   * @post: Displays the options for the attacks
   * Pure virtual function to be implemented by the derived classes
   */
-virtual void displayAttacks() const = 0;
+displayAttacks
 ```
 
 ### Task 2: Modify the Dragon, Ghoul, and Mindflayer Classes
@@ -120,13 +120,13 @@ virtual void displayAttacks() const = 0;
   *      if UNDEAD: 3 [POISON/FIRE/WATER/EARTH/AIR], 1 POISON. The damage types and amount are added to the vector as two separate entries, even if both entries are POISON type.
   *      if UNKNOWN: 3 [POISON/FIRE/WATER/EARTH/AIR] where the damage type is the Dragon's elemental affinity if it has one, otherwise it is POISON  
 */
-void addAttack(int attack) override;
+addAttack
 
 /**
   * @post: displays the attacks of the Dragon in the form:
   * [DRAGON] Choose an attack (1-3):\n1: BITE\t\t2: STOMP\t\t3: ELEMENTAL BREATH\n
   */
-void displayAttacks() const override;
+displayAttacks
 ```
 
 #### Ghoul Class
@@ -168,13 +168,13 @@ void displayAttacks() const override;
   *      Attack name: PLAGUE CLOUD
   *      2 PHYSICAL, 1 POISON
   */
-void addAttack(int attack) override;
+addAttack
 
 /**
   * @post: displays the attacks of the Ghoul in the form:
   * [GHOUL] Choose an attack (1-3):\n1: BITE\t\t2: CLAW\t\t3: CLOUD OF DOOM\n
   */
-void displayAttacks() const override;
+displayAttacks
 ```
 
 #### Mindflayer Class
@@ -219,13 +219,13 @@ void displayAttacks() const override;
   *      Attack name: TENTACLE SLAP
   *      Damage: 1 PHYSICAL, 1 EMOTIONAL
   */
-void addAttack(int attack) override;
+addAttack
 
 /**
   * @post: displays the attacks of the Mindflayer in the form:
   * [MINDFLAYER] Choose an attack (1-3):\n1: PSIONIC BOLT\t\t2: TELEPATHIC BOLT\t\t3: ILLUSIONARY BOLT\n
   */
-void displayAttacks() const override;
+displayAttacks
 ```
 
 ### Task 3: Modify the Cavern Class
@@ -251,65 +251,65 @@ The `Cavern` class must additionally define the following data members:
   * @post: Stores the ALIEN Creatures of highest level in the cavern's alien stack, in the order in which they appear in the Cavern.
   *      : Empty the stack before beginning.
   */
-void initializeAlienStack();
+initializeAlienStack
 
 /**
   * @post: Stores the UNDEAD Creatures of highest level in the cavern's undead stack, in the order in which they appear in the Cavern.
   *      : Empty the stack before beginning.
   */
-void initializeUndeadStack();
+initializeUndeadStack
 
 /**
   * @post: Stores the MYSTICAL Creatures of highest level in the cavern's mystical stack, in the order in which they appear in the Cavern.
   *      : Empty the stack before beginning.
   */
-void initializeMysticalStack();
+initializeMysticalStack
 
 /**
   * @post: Stores the UNKNOWN Creatures of highest level in the cavern's unknown stack, in the order in which they appear in the Cavern.
   *      : Empty the stack before beginning.
   */
-void initializeUnknownStack();
+initializeUnknownStack
 
 /**
   * @return: A copy of the stack of highest level Aliens in the cavern
   */
-std::stack<Creature*> getAlienStack() const;
+getAlienStack
 
 /**
   * @return: A copy of the stack of highest level Undeads in the cavern
   */
-std::stack<Creature*> getUndeadStack() const;
+getUndeadStack
 
 /**
   * @return: A copy of the stack of highest level Mysticals in the cavern
   */
-std::stack<Creature*> getMysticalStack() const;
+getMysticalStack
 
 /**
   * @return: A copy of the stack of highest level Unknowns in the cavern
   */
-std::stack<Creature*> getUnknownStack() const;
+getUnknownStack
 
 /**
   * @post: clears the stack of highest level Aliens in the cavern
   */
-void clearAlienStack();
+clearAlienStack
 
 /**
   * @post: clears the stack of highest level Undeads in the cavern
   */
-void clearUndeadStack();
+clearUndeadStack
 
 /**
   * @post: clears the stack of highest level Mysticals in the cavern
   */
-void clearMysticalStack();
+clearMysticalStack
 
 /**
   * @post: clears the stack of highest level Unknowns in the cavern 
   */
-void clearUnknownStack();
+clearUnknownStack
 
 /**
   * @param: A stack of creature pointers 
@@ -328,7 +328,7 @@ void clearUnknownStack();
   *        [[CREATURE TYPE]] Choose an attack (1-3):
   *        1: [ATTACK 1 NAME]\t\t2: [ATTACK 2 NAME]\t\t3: [ATTACK 3 NAME]
   */
-void setAttacks(std::stack<Creature*>& creatureStack);
+setAttacks
 ```
 
 ### Debugging Help
