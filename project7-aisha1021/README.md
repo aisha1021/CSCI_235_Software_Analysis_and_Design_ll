@@ -31,7 +31,6 @@ Remember to thoroughly document your code!
 
 ```cpp
 // Default constructor
-Skill();
 
 // Parameterized constructor
 /**
@@ -40,7 +39,6 @@ Skill();
  * @param description: The description of the Skill
  * @param leveled: Whether or not the Skill is leveled up
  */
-Skill(int id, const std::string &name, const std::string &description, bool leveled);
 ```
 
 ### Methods
@@ -50,19 +48,19 @@ Skill(int id, const std::string &name, const std::string &description, bool leve
   * @param: A const reference to Skill 
   * @return: True if the id_ of the Skill is equal to that of the argument, false otherwise
   */
-bool operator==(const Skill &other) const;
+operator==
 
 /**
   * @param: A const reference to Skill 
   * @return: True if the id_ of the Skill is less than that of the argument, false otherwise
   */
-bool operator<(const Skill &other) const;
+operator<
 
 /**
   * @param: A const reference to Skill 
   * @return: True if the id_ of the Skill is greater than that of the argument, false otherwise
   */
-bool operator>(const Skill &other) const;
+operator>
 ```
 
 ## Task 2: Implement the SkillTree Class
@@ -75,7 +73,6 @@ The `SkillTree` class must be a subclass of `BinarySearchTree` that stores `Skil
 
 ```cpp
 // Default Constructor
-SkillTree();
 
 /**
  * @param: A const reference to string: the name of a CSV file
@@ -84,7 +81,6 @@ SkillTree();
  * id,name,description,leveled
  * Ignore the first line. Each subsequent line represents a Skill to be added to the SkillTree.
  */
-SkillTree(const std::string &filename);
 ```
 ![Project7 Ghoul Tree](project7_ghoul_tree.png)
 ![Project7 SkillTree](project7_skillTree.png)
@@ -96,25 +92,25 @@ SkillTree(const std::string &filename);
  * @param: A const reference to int representing the id of the Skill to be found
  * @return: A pointer to the node containing the Skill with the given id, or nullptr if the Skill is not found
  */
-BinaryNode<Skill>* findSkill(int id) const;
+findSkill
 
 /**
   * @param: A const reference to Skill 
   * @post: The Skill is added to the tree (in BST order as implemented in the base class) only if it was not already in the tree. Note that all comparisons are id-based as implemented by the Skill comparison operators.
   * @return: True if the Skill is successfully added to the SkillTree, false otherwise
   */
-bool addSkill(const Skill &skill);
+addSkill
 
 /**
   * @param: A const reference to string: the name of a Skill
   * @return: True if the Skill is successfully removed from the SkillTree, false otherwise
   */
-bool removeSkill(const std::string &name);
+removeSkill
 
 /**
   * @post: Clears the tree
   */
-void clear();
+clear
 
 /**
   * @param: A const reference to int representing the id of a Skill
@@ -128,7 +124,7 @@ void clear();
   * Disregard the leveled_ field of the existing Skills in the tree.
   * If the Skill with the given id is not found, return -1.
   */
-int calculateSkillPoints(int id) const;
+calculateSkillPoints
 
 /**
   * @post: Balances the tree. Recall the definition of a balanced tree:
@@ -136,7 +132,7 @@ int calculateSkillPoints(int id) const;
   * All paths from root of subtrees to leaf differ in length by at most 1
   * Hint: You may sort the elements and build the tree recursively using a divide and conquer approach      
   */
-void balance();
+balance();
 
 /**
   * @post: prints the tree in preorder, in the format:
@@ -144,7 +140,7 @@ void balance();
   [description_]\n 
   [leveled_]
   */
-void preorderDisplay() const;
+preorderDisplay
 ```
 
 ![Project7 Dragon Tree](project7_dragon_tree.png)
