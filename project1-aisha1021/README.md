@@ -87,7 +87,6 @@ private:
   Default enum value: UNKNOWN 
   Default Hitpoints and Level: 1.
  */
-Creature();
 
 /**
   Parameterized constructor.
@@ -98,7 +97,6 @@ Creature();
   @param      : A flag indicating whether the creature is tame, with default value False
   @post       : The private members are set to the values of the corresponding parameters. The name is converted to UPPERCASE if it consists of alphabetical characters only, otherwise it is set to NAMELESS.
  */
-Creature(const std::string &name, Category category = UNKNOWN, int hitpoints = 1, int level = 1, bool tame = false);
 ```
 
 **Accessors (get) and Mutators (set)**
@@ -111,24 +109,24 @@ Creature(const std::string &name, Category category = UNKNOWN, int hitpoints = 1
            If the input contains non-alphabetic characters, do nothing.
   @return : true if the name was set, false otherwise
 */
-bool setName(const std::string &name);
+setName
 
 /**
   @return : the name of the Creature
 */
-std::string getName() const;
+getName
 
 /**
   @param  : a reference to Category, the category of the Creature (an enum)
   @post   : sets the Creature's category to the value of the parameter
             If the given category was invalid, set category_ to UNKNOWN.
 */
-void setCategory(Category category);
+setCategory
 
 /**
   @return : the category of the Creature (in string form)
 */
-std::string getCategory() const;
+getCategory
 
 /**
   @param  : a reference to integer that represents the creature's hitpoints
@@ -137,12 +135,12 @@ std::string getCategory() const;
   @post   : sets the hitpoints private member to the value of the parameter
   @return : true if the hitpoints were set, false otherwise
 */
-bool setHitpoints(int hitpoints);
+setHitpoints
 
 /**
   @return : the value stored in hitpoints_
 */
-int getHitpoints() const;
+getHitpoints
 
 /**
   @param  : a reference to integer level
@@ -151,23 +149,23 @@ int getHitpoints() const;
             (do nothing for invalid input)
   @return : true if the level was set, false otherwise
 */
-bool setLevel(int level);
+setLevel
 
 /**
   @return : the value stored in level_
 */
-int getLevel() const;
+getLevel
 
 /**
   @param  : a reference to boolean value
   @post   : sets the tame flag to the value of the parameter
 */
-void setTame(bool tame);
+setTame
 
 /**
   @return true if the creature is tame, false otherwise
 */
-bool isTame() const;
+isTame
 
 /**
   @post     : displays Creature data in the form:
@@ -177,7 +175,7 @@ bool isTame() const;
                Hitpoints: [Hitpoints]\n
                Tame: [TRUE/FALSE]"   
 */
-void display() const;
+display
 ```
 
 ### Task 2: Testing
