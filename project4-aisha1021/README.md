@@ -55,7 +55,7 @@ Work through the tasks sequentially (implement and test). Only move on to a task
   @post     : Modifies the creature's private member variables (the exact modifications will be subclass-specific)
   @return   : true if the creature leaves the Cavern, false otherwise
 */
-virtual bool eatMycoMorsel() = 0;
+eatMycoMorsel
 ```
 
 **Modify the Dragon class as follows:**
@@ -86,13 +86,13 @@ virtual bool eatMycoMorsel() = 0;
   HEADS: 3
   IT CAN FLY
 */
-void display() const override;
+display
 
 /**
   @post   : Modifies the creature based on its category and element when it eats a MycoMorsel.
   @return : true if the creature leaves the Cavern, false otherwise
 */
-bool eatMycoMorsel() override;
+eatMycoMorsel
 ```
 
 **Modify the Ghoul class as follows:**
@@ -123,13 +123,13 @@ bool eatMycoMorsel() override;
   FACTION: FLESHGORGER
   IT CAN TRANSFORM
 */
-void display() const override;
+display
 
 /**
   @post   : Modifies the creature based on its faction when it eats a MycoMorsel.
   @return : true if the creature leaves the Cavern, false otherwise
 */
-bool eatMycoMorsel() override;
+eatMycoMorsel
 ```
 
 **Modify the Mindflayer class as follows:**
@@ -166,13 +166,13 @@ bool eatMycoMorsel() override;
   PSIONIC
   ILLUSIONARY
 */
-void display() const override;
+display
 
 /**
   @post   : Modifies the creature based on its affinities and projectiles when it eats a MycoMorsel.
   @return : true if the creature leaves the Cavern, false otherwise
 */
-bool eatMycoMorsel() override;
+eatMycoMorsel
 ```
 
 #### Task 2: Modify the Cavern Class
@@ -201,7 +201,6 @@ bool eatMycoMorsel() override;
   11. AFFINITIES: Only applicable to Mindflayers. Affinities are of the form [AFFINITY1];[AFFINITY2] where multiple affinities are separated by a semicolon. The value may be NONE for a Mindflayer with no affinities, or creatures of other subclasses.
   12. PROJECTILES: Only applicable to Mindflayers. PROJECTILES are of the form [PROJECTILE TYPE1]-[QUANTITY];[PROJECTILE TYPE 2]-[QUANTITY] where multiple types of projectiles are separated by a semicolon. The value may be NONE for a Mindflayer with no projectiles, or creatures of other subclasses.
 */
-Cavern(const std::string& inputFile);
 ```
 
 - Add the following public member functions:
@@ -210,20 +209,18 @@ Cavern(const std::string& inputFile);
 /**
   @post: For every creature in the cavern, displays each creature's information
 */
-void displayCreatures() const;
+displayCreatures
 
 /**
   @param: a string reference to a category
   @post: For every creature in the cavern of the given category (only exact matches to the input string), displays each creature's information
 */
-void displayCategory(const std
-
-::string& category) const;
+displayCategory
 
 /**
   @post: Every creature in the cavern eats a MycoMorsel.
 */
-void mycoMorselFeast();
+mycoMorselFeast
 ```
 
 ### Testing
